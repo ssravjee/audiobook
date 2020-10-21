@@ -1,6 +1,6 @@
 import pyttsx3
 import PyPDF2 as p2
-file = open('C:/pdf/lipsum.pdf','rb')
+file = open('./pdf/lipsum.pdf','rb')
 book = p2.PdfFileReader(file)
 page = book.getPage(0)
 text = page.extractText()
