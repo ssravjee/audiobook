@@ -16,6 +16,6 @@ print (text)
 speaker = pyttsx3.init()
 # Read aloud the pdf page selected
 speaker.say(text)
-# The line below is used
+# The line below is used to block program execution until the read-aloud command buffer / queue is cleared or read-out
 speaker.runAndWait()
 print('Program completed.')
